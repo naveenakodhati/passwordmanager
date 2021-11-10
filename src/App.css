@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-app-container {
+  background-color: #9ba9eb;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-img {
+  width: 130px;
+  height: 60px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.small-image {
+  width: 50%;
+  margin: 10px;
+  align-self: center;
+  display: flex;
+  order: 0;
+}
+.height {
+  min-height: 50vh;
+}
+.pwd-form-container {
+  background-color: #454f84;
+  border-radius: 8px;
+  padding: 15px;
+  width: 80%;
+  align-self: center;
+}
+.pwd-title {
+  color: white;
+  font-size: 20px;
+  align-self: center;
+}
+.inputs-container {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  cursor: pointer;
+  outline: none;
+}
+.logos {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.input-element {
+  width: 90%;
+  border: 0px;
+  border-left: 2px #94a3b8 solid;
+  padding: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.adjust-btn {
+  display: flex;
+  flex-direction: column;
+}
+.add-Btn {
+  background-color: #0b69ff;
+  color: white;
+  padding: 10px;
+  align-self: flex-end;
+  margin-top: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+  border-radius: 5px;
+}
+.large-main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #5763a5;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 100%;
+}
+.large-image {
+  display: none;
+  width: 50%;
+  margin: 10px;
+  order: 2;
+  align-self: center;
+}
+
+.display-pwd-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.display {
+  display: flex;
+}
+
+.search-container {
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  height: 30px;
+  border-radius: 4px;
+}
+.search-element {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 90%;
+  border: 0px;
+  border-left: 2px #94a3b8 solid;
+  cursor: pointer;
+  outline: none;
+}
+.pwd-count {
+  border-radius: 10px;
+  border: 1px #f8fafc solid;
+  align-self: center;
+  margin-left: 15px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.search-img {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin: 6px;
+}
+.line {
+  background-color: #7683cb;
+  width: 100%;
+  padding: 1px;
+  border: 0px;
+}
+.show-pwd {
+  display: flex;
+  align-self: flex-end;
+}
+.checkbox {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin-right: 3px;
+}
+.label-title {
+  align-self: center;
+  color: White;
+  font-size: 17px;
+  font-weight: 500;
+}
+.no-pwd-image {
+  width: 50%;
+  align-self: center;
+  margin: 10px;
+}
+.ul-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+.no-pwd-title {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}
+.large-pwd-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #5763a5;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .large-main-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  .small-image {
+    display: none;
+  }
+  .large-image {
+    display: flex;
+    align-self: center;
+  }
+  .large-pwd-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-app-container {
+    padding: 60px;
+  }
+  .ul-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
